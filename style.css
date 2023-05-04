@@ -8,10 +8,46 @@
     animation-timing-function: linear;
     animation-duration: 4s;
 }
+.clown{
+    width: 100px;
+    height: 70px;
+    margin-left: 500px;
+    cursor: pointer;
+    background: green;
+    animation-name: AnimationClown;
+    animation-iteration-count: infinite;
+    animation-direction:reverse;
+    animation-timing-function: linear;
+    animation-duration: 7s;
+}
+.clown:focus{
+    transition-duration: 2s;
+}
 .icon{ 
     fill:none;
     width: 10px;
     height: 10px;
+}
+.pict{
+    width: 20px;
+    height: 20px;
+}
+@keyframes AnimationClown{
+    0%{
+        background: greenyellow;
+    }
+    50%{
+        background: green;
+    }
+    60%{ 
+        transform: rotate(360deg);
+    }
+    80%{
+        background: seagreen;
+    }
+    100%{
+        background: black;
+    }
 }
 @keyframes AnimationBlock {
     0%{ 
