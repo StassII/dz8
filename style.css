@@ -1,0 +1,32 @@
+.block{ 
+    width: 200px;
+    height: 200px;
+    background: grey;
+    animation-name: AnimationBlock;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+}
+.icon{ 
+    fill:none;
+    width: 10px;
+    height: 10px;
+}
+@keyframes AnimationBlock {
+    0%{ 
+        background: red;
+    }
+    40%{
+        background: teal;
+    }
+    50%{ 
+        transform: rotate(180deg);
+    }
+    80%{
+        background: palegreen;
+    }
+    100%{ 
+        background: yellow;
+    }
+}
